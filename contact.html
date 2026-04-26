@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Central Zoo</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="shortcut icon" href="./CONTENT/FAV_ICON-removebg-preview.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container nav-contain">
+            <a href="home.html" class="logo">
+                <img src="./CONTENT/LOGO.png" alt="Central Zoo Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="animals.html">Animals</a></li>
+                <li><a href="safari.html">Safari booking</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section class="same contactus">
+        <div class="contact-header" data-aos="zoom-in">
+            <h2>Contact Us</h2>
+            <p>We are glad to hear from you</p>
+        </div>
+
+        <div class="container">
+            <div class="contact-row">
+                <div class="left-cards" data-aos="fade-right">
+                    <div class="contact-cards">
+                        <h4>Location</h4>
+                        <p>Central Zoo, Main Safari Road</p>
+                    </div>
+
+                    <div class="contact-cards">
+                        <h4>Phone</h4>
+                        <p>+92 3001234567</p>
+                    </div>
+
+                    <div class="contact-cards">
+                        <h4>Email</h4>
+                        <p>info@centralzoo.com</p>
+                    </div>
+
+                    <div class="contact-cards">
+                        <h4>Timings</h4>
+                        <p>9AM - 6PM (Mon - Sun)</p>
+                    </div>
+                </div>
+
+                <div class="right-form" data-aos="fade-left">
+                    <form onsubmit="event.preventDefault();">
+                        <div class="form-row">
+                            <input type="text" placeholder="Your Name" required>
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <input type="text" placeholder="Subject">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button onclick=myfun() type="submit" class="btn-connect">Connect With Us</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="same map">
+        <div class="container">
+            <div class="map-header">
+                <h2>Find Us on Map</h2>
+            </div>
+            <div class="maps-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.137712401124!2d67.06815731500435!3d24.87328298404848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e99092f6931%3A0x6b45e69e3568f56e!2sKarachi%20Zoo!5e0!3m2!1sen!2s!4v1625574345678!5m2!1sen!2s"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="my-foot">
+        <footer class="footer">
+            <div class="container footer-content">
+                <div class="footer-col about">
+                    <img src="./CONTENT/FAV_ICON-removebg-preview.png" alt="Logo" class="footer-logo">
+                    <p>Experience the wildlife like never before at Central Zoo. A place of conservation and education.
+                    </p>
+                </div>
+
+                <div class="footer-col left">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="animals.html">Animals</a></li>
+                        <li><a href="safari.html">Safari Booking</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col right">
+                    <h3>Zoo Timings</h3>
+                    <p><span>Mon - Fri:</span> 9:00 AM - 7:00 PM</p>
+                    <p><span>Sat - Sun:</span> 9:00 AM - 8:00 PM</p>
+                    <p><span>Holidays:</span> 9:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Central Zoo | Designed for Excellence</p>
+            </div>
+        </footer>
+    </section>
+</body>
+
+<!-- JAVASCRIPT -->
+
+<!-- Submit Button Functionality -->
+<script>
+    function myfun() {
+        alert("Contact Form Submitted")
+    }
+</script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+
+<!-- Functionality of buttons -->
+<script>
+    function myfun() {
+        alert("Thanks For Contacting ! We'll try to reach you out as soon as possible ")
+    }
+</script>
+
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reptiles | Central Zoo</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="shortcut icon" href="./CONTENT/FAV_ICON-removebg-preview.png" type="image/x-icon">
+</head>
+
+<!-- NAVBAR -->
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-contain">
+            <a href="index.html" class="logo">
+                <img src="./CONTENT/LOGO.png" alt="Central Zoo Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="animals.html">Animals</a></li>
+                <li><a href="safari.html">Safari booking</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Working Logic of Lightbox -->
+    <div id="animalModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails()">&times;</span>
+
+            <div class="modal-flex">
+                <div class="modal-img-box">
+                    <img id="modalImg" src>
+                </div>
+                <div class="modal-info-box">
+                    <h2 id="mName"></h2>
+                    <p><strong>Scientific:</strong> <span id="mSpecies"></span></p>
+                    <p><strong>Class:</strong> <span id="mClass"></span></p>
+                    <p><strong>Diet:</strong> <span id="mDiet"></span></p>
+                    <p><strong>Habitat:</strong> <span id="mHabit"></span></p>
+                    <p><strong>Status:</strong> <span id="mStatus"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAin section for mammals -->
+    <section class="animal-list-section" data-aos="zoom-out">
+        <div class="contact-header" data-aos="zoom-in">
+            <h2>The Reptile Realm: Ancient Survivors</h2>
+            <p>Enter the world of cold-blooded predators and resilient survivors.</p>
+        </div>
+        <div class="container">
+
+            <div class="animal-grid">
+                <div class="a-card"
+                    onclick="openDetails('Saltwater Crocodile', 'Crocodylus porosus', 'Reptile', 'Carnivore', 'Mangroves/Coasts', 'Stable', './CONTENT/saltwtaer crocodile.jpg')">
+                    <img src="./CONTENT/saltwtaer crocodile.jpg" alt>
+                    <div class="a-info">
+                        <h3>Saltwater Crocodile</h3>
+                        <span>View Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('komodo Dragon', 'Varanus komodoensis', 'Reptile', 'Carnivore', 'Island Savannas', 'Endangered', './CONTENT/Komodo Dragon.jpg')">
+                    <img src="./CONTENT/Komodo Dragon.jpg" alt>
+                    <div class="a-info">
+                        <h3>Komodo dragon</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Green Sea Turtle', 'Chelonia mydas', 'Reptile', 'Herbivore', 'Oceans/Beaches', 'Stable', './CONTENT/Green Sea Turtle.jpg')">
+                    <img src="./CONTENT/Green Sea Turtle.jpg" alt>
+                    <div class="a-info">
+                        <h3>Green Sea Turtle</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('King Cobra', 'Ophiophagus hannah', 'Reptile', 'Carnivore', 'Rainforests', 'Vulnerable', './CONTENT/King Cobra.jpg')">
+                    <img src="./CONTENT/King Cobra.jpg" alt>
+                    <div class="a-info">
+                        <h3>King Cobra</h3><span>View Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Galapagos Tortoise', 'Chelonoidis niger', 'Reptile', 'Herbivore,', 'Volcanic Islands', 'Stable', './CONTENT/Galapagos Tortoise.jpg')">
+                    <img src="./CONTENT/Galapagos Tortoise.jpg" alt>
+                    <div class="a-info">
+                        <h3>Galapagos Tortoise</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Black Mamba', 'Dendroaspis polylepis', 'Reptile', 'Carnivore', 'Rocky Savannas', 'Stable', './CONTENT/Black Mamba.jpg')">
+                    <img src="./CONTENT/Black Mamba.jpg" alt>
+                    <div class="a-info">
+                        <h3>Black Mamba</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Gharial', 'Gavialis gangeticus', 'Reptile', 'Piscivore', 'Deep rivers', 'Critically low', './CONTENT/Gharial.jpg')">
+                    <img src="./CONTENT/Gharial.jpg" alt>
+                    <div class="a-info">
+                        <h3>Gharial</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Veiled Chameleon', 'Chamaeleo calyptratus', 'Reptile', 'Insectivore', 'Coastal Plateaus', 'Least Concern', './CONTENT/Veiled Chameleon.jpg')">
+                    <img src="./CONTENT/Veiled Chameleon.jpg" alt="Maned wolf">
+                    <div class="a-info">
+                        <h3>Veiled Chameleon</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Gila Monster', 'Heloderma suspectum', 'Reptile', 'Carnivore', 'Deserts', 'Stable', './CONTENT/Gila Monster.jpg')">
+                    <img src="./CONTENT/Gila Monster.jpg" alt>
+                    <div class="a-info">
+                        <h3>Gila Monster</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Green Iguana', 'Iguana iguana', 'Reptile', 'Herbivore', 'Rainforests', 'Stable', './CONTENT/Green Iguana.jpg')">
+                    <img src="./CONTENT/Green Iguana.jpg" alt>
+                    <div class="a-info">
+                        <h3>Green Iguana</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Blue Pit Viper', 'Trimeresurus insularis', 'Reptile', 'Carnivore', 'Tropical Islands', 'Stable', './CONTENT/Blue Pit Viper.jpg')">
+                    <img src="./CONTENT/Blue Pit Viper.jpg" alt="Wolf">
+                    <div class="a-info">
+                        <h3>Blue Pit Viper</h3><span>View Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Frilled Lizard', 'Chlamydosaurus kingii', 'Reptile', 'Insectivore', 'Tropical Forest', 'stable', './CONTENT/Frilled Lizard.jpg')">
+                    <img src="./CONTENT/Frilled Lizard.jpg" alt="Chimpanzee">
+                    <div class="a-info">
+                        <h3>Frilled Lizard</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('American Alligator', 'Alligator mississipiensiss', 'Reptile', 'Carnivore', 'Swamps/Marshes', 'Vulnerable', './CONTENT/American Alligator.jpg')">
+                    <img src="./CONTENT/American Alligator.jpg" alt="Leopard">
+                    <div class="a-info">
+                        <h3>American Alligator</h3><span>View Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Thorny Devil', 'Moloch horridus', 'Reptile', 'Myrmecovore', 'Sandy Deserts', 'Least Concern', './CONTENT/Thorny Devil.jpg')">
+                    <img src="./CONTENT/Thorny Devil.jpg" alt="Hippo">
+                    <div class="a-info">
+                        <h3>Thorny Devil</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Reticulated Python', 'Malayopython reticulatus', 'Reptile', 'Carnivore', 'Jungles/Sewers', 'Stable', './CONTENT/Reticulated Python.jpg')">
+                    <img src="./CONTENT/Reticulated Python.jpg" alt>
+                    <div class="a-info">
+                        <h3>Reticulated Python</h3><span>View Details</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="my-foot">
+        <footer class="footer">
+            <div class="container footer-content">
+                <div class="footer-col about">
+                    <img src="./CONTENT/FAV_ICON-removebg-preview.png" alt="Logo" class="footer-logo">
+                    <p>Experience the wildlife like never before at Central
+                        Zoo. A place of conservation and education.
+                    </p>
+                </div>
+
+                <div class="footer-col left">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="animals.html">Animals</a></li>
+                        <li><a href="safari.html">Safari Booking</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col right">
+                    <h3>Zoo Timings</h3>
+                    <p><span>Mon - Fri:</span> 9:00 AM - 7:00 PM</p>
+                    <p><span>Sat - Sun:</span> 9:00 AM - 8:00 PM</p>
+                    <p><span>Holidays:</span> 9:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Central Zoo | Designed for Excellence</p>
+            </div>
+        </footer>
+    </section>
+</body>
+
+<!-- JAVASCRIPT -->
+
+<!-- Javascript of Lightbox/Modal -->
+<script>
+    function openDetails(name, species, classification, diet, habitat, status, imgPath) {
+
+        document.getElementById('mName').innerText = name;
+        document.getElementById('mSpecies').innerText = species;
+        document.getElementById('mClass').innerText = classification;
+        document.getElementById('mDiet').innerText = diet;
+        document.getElementById('mHabit').innerText = habitat;
+        document.getElementById('mStatus').innerText = status;
+        document.getElementById('modalImg').src = imgPath;
+
+
+        document.getElementById('animalModal').style.display = 'flex';
+    }
+
+    function closeDetails() {
+        document.getElementById('animalModal').style.display = 'none';
+    }
+</script>
+
+<!-- javascript for AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+
+</html>

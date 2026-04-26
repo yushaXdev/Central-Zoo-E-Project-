@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Booking | Central Zoo</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="shortcut icon" href="./CONTENT/FAV_ICON-removebg-preview.png" type="image/x-icon">
+</head>
+
+<!-- NAVBAR -->
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-contain">
+            <a href="index.html" class="logo">
+                <img src="./CONTENT/LOGO.png" alt="Central Zoo Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="animals.html">Animals</a></li>
+                <li><a href="safari.html">Safari booking</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- SAFARI SECTION -->
+    <section class="same safari-hero">
+        <div class="container">
+            <h1 data-aos="zoom-in">Experience The Wild</h1>
+            <p>Book your adventure and explore the majestic wildlife at Central Zoo.</p>
+        </div>
+    </section>
+
+    <section class="safari-packages">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-aos="zoom-in">Our Safari Tours</h2>
+                <p>Select a tour that fits your adventure spirit</p>
+            </div>
+
+            <div class="packages-grid" data-aos="zoom-out">
+                <div class="pkg-card">
+                    <div class="pkg-header">
+                        <h3>Day Expedition</h3>
+                        <div class="price">$15<span>/person</span></div>
+                    </div>
+                    <ul class="pkg-features">
+                        <li>Guided Jeep Tour</li>
+                        <li>Land Animals Zone</li>
+                        <li>2 Hours Duration</li>
+                    </ul>
+                    <a href="#booking-form" class="btn-select">Select Slot</a>
+                </div>
+
+                <div class="pkg-card featured">
+                    <div class="pkg-header">
+                        <h3>Night Safari</h3>
+                        <div class="price">$25<span>/person</span></div>
+                    </div>
+                    <ul class="pkg-features">
+                        <li>Nocturnal Animal View</li>
+                        <li>Expert Guide Included</li>
+                        <li>Complimentary Drinks</li>
+                    </ul>
+                    <a href="#booking-form" class="btn-select">Select Slot</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking-form" class="booking-section" data-aos="fade-right">
+        <div class="container">
+            <div class="booking-wrapper">
+                <div class="booking-info">
+                    <h2>Book Your Safari</h2>
+                    <p>Fill out the form to reserve your spot. Our team will confirm your booking via email.</p>
+                    <div class="safety-note">
+                        <strong>Welfare Note:</strong> All safaris follow strict animal safety protocols to ensure zero
+                        disturbance.
+                    </div>
+                </div>
+
+                <form class="actual-form">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Safari Type</label>
+                            <select>
+                                <option>Day Expedition</option>
+                                <option>Night Safari</option>
+                                <option>Private Tour</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Date</label>
+                            <input type="date" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Total Persons</label>
+                        <input type="number" min="1" max="10" value="1">
+                    </div>
+                    <button type="submit" class="btn-submit" onclick=myfun()>Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <section class="my-foot">
+        <footer class="footer">
+            <div class="container footer-content">
+                <div class="footer-col about">
+                    <img src="./CONTENT/FAV_ICON-removebg-preview.png" alt="Logo" class="footer-logo">
+                    <p>Experience the wildlife like never before at Central Zoo. A place of conservation and education.
+                    </p>
+                </div>
+
+                <div class="footer-col left">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="animals.html">Animals</a></li>
+                        <li><a href="safari.html">Safari Booking</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col right">
+                    <h3>Zoo Timings</h3>
+                    <p><span>Mon - Fri:</span> 9:00 AM - 7:00 PM</p>
+                    <p><span>Sat - Sun:</span> 9:00 AM - 8:00 PM</p>
+                    <p><span>Holidays:</span> 9:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Central Zoo | Designed for Excellence</p>
+            </div>
+        </footer>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+
+    <!-- Functionality of packages buttons -->
+    <script>
+        function myfun() {
+            alert("form Was Submitted")
+        }
+    </script>
+</body>
+
+</html>

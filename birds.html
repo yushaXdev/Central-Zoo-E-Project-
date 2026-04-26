@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birds | Central Zoo</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="shortcut icon" href="./CONTENT/FAV_ICON-removebg-preview.png" type="image/x-icon">
+</head>
+
+<!-- NAVBAR -->
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-contain">
+            <a href="index.html" class="logo">
+                <img src="./CONTENT/LOGO.png" alt="Central Zoo Logo">
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="animals.html">Animals</a></li>
+                <li><a href="safari.html">Safari booking</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Working Logic of Lightbox -->
+    <div id="animalModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDetails()">&times;</span>
+
+            <div class="modal-flex">
+                <div class="modal-img-box">
+                    <img id="modalImg" src>
+                </div>
+                <div class="modal-info-box">
+                    <h2 id="mName"></h2>
+                    <p><strong>Scientific:</strong> <span id="mSpecies"></span></p>
+                    <p><strong>Class:</strong> <span id="mClass"></span></p>
+                    <p><strong>Diet:</strong> <span id="mDiet"></span></p>
+                    <p><strong>Habitat:</strong> <span id="mHabit"></span></p>
+                    <p><strong>Status:</strong> <span id="mStatus"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAin section for mammals -->
+    <section class="animal-list-section" data-aos="zoom-out">
+        <div class="contact-header" data-aos="zoom-in">
+            <h2>Birds Sanctuary</h2>
+            <p>Take flight into a world of vibrant colors and breathtaking grace.</p>
+        </div>
+        <div class="container">
+
+            <div class="animal-grid">
+                <div class="a-card"
+                    onclick="openDetails('King Fisher', 'Alcedo atthis', 'Bird', 'Fish', 'Rivers/Lakes', 'Stable', './CONTENT/Kingfisher.jpg')">
+                    <img src="./CONTENT/Kingfisher.jpg" alt="">
+                    <div class="a-info">
+                        <h3>King Fisher</h3>
+                        <span>View Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Shoebill Storks', 'Balaeniceps rex', 'Bird', 'Carnivore', 'Swamps', 'Vulnerable', './CONTENT/Shoebill Stork.jpg')">
+                    <img src="./CONTENT/Shoebill Stork.jpg" alt="">
+                    <div class="a-info">
+                        <h3>Shoebill Storks</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Harpy Eagle', 'Harpia harpyja', 'Bird', 'Carnivore', 'Rainforests', 'Near Threatened', './CONTENT/Harpy Eagle.jpg')">
+                    <img src="./CONTENT/Harpy Eagle.jpg" alt="">
+                    <div class="a-info">
+                        <h3>Harpy Eagle</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Secretary Bird', 'Sagittarius serpentarius', 'Bird', 'Curnivore', 'Savannas', 'Endangered', './CONTENT/Secretary Bird.jpg')">
+                    <img src="./CONTENT/Secretary Bird.jpg" alt="">
+                    <div class="a-info">
+                        <h3>Secretary Bird</h3><span>View Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Mandarin Duck', 'Aix galericulata', 'Bird', 'Omnivore', 'Wetlands', 'Stable', './CONTENT/Mandarin Duck.jpg')">
+                    <img src="./CONTENT/Mandarin Duck.jpg" alt="">
+                    <div class="a-info">
+                        <h3>Mandarin Duck</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Toucan', 'Ramphastos tocoi', 'Bird', 'Fruit', 'Tropical Forests', 'Stable', './CONTENT/Toucan.jpg')">
+                    <img src="./CONTENT/Toucan.jpg" alt="">
+                    <div class="a-info">
+                        <h3>Toucan</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Peregrine Falcon', 'Ailuropoda melanoleuca', 'Bird', 'Carnivore', 'Mountains/Cities', 'Stable', './CONTENT/Peregrine Falcon.jpg')">
+                    <img src="./CONTENT/Peregrine Falcon.jpg" alt="">
+                    <div class="a-info">
+                        <h3>Peregrine Falcon</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Atlantic Puffin', 'Fratercula arctica', 'Bird', 'fish', 'Coastal Cliffs', 'Vulnerable', './CONTENT/Atlantic Puffin.jpg')">
+                    <img src="./CONTENT/Atlantic Puffin.jpg" alt="">
+                    <div class="a-info">
+                        <h3>Atlantic Puffin</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Victoria Crowned Pigeon', 'Goura victoria', 'Bird', 'Fruit', 'Lowland Forests', 'Near Threatened', './CONTENT/Victoria Crowned Pigeon.jpg')">
+                    <img src="./CONTENT/Victoria Crowned Pigeon.jpg" alt="">
+                    <div class="a-info">
+                        <h3>Victoria Crowned Pigeon</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Hoopoe', 'Upupa epops', 'Bird', 'Insects', 'Grasslands', 'stable', './CONTENT/Hoopoe.jpg')">
+                    <img src="./CONTENT/Hoopoe.jpg" alt="">
+                    <div class="a-info">
+                        <h3>Hoopoe</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Blue Jay', 'Cyanocitta cristata', 'Bird', 'Omnivore', 'Old-growth Forests', 'Stable', './CONTENT/Blue Jay.jpg')">
+                    <img src="./CONTENT/Blue Jay.jpg" alt="">
+                    <div class="a-info">
+                        <h3>Blue Jay</h3><span>View Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Golden Pheasant', 'Chrysolophus pictus', 'Bird', 'Omnivore', 'Mountains', 'Stable', './CONTENT/Golden Pheasant.jpg')">
+                    <img src="./CONTENT/Golden Pheasant.jpg" alt="">
+                    <div class="a-info">
+                        <h3>Golden Pheasant</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Great Hornbill', 'Buceros bicornis', 'Bird', 'Fruit', 'Old-growth Forests', 'Vulnerable', './CONTENT/Great Hornbill.png')">
+                    <img src="./CONTENT/Great Hornbill.png" alt="">
+                    <div class="a-info">
+                        <h3>Great Hornbill</h3><span>View Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Kakapo', 'Strigops habroptilas', 'Bird', 'Herbivore', 'Island Forests', 'Critically Endangered', './CONTENT/Kakapo.jpg')">
+                    <img src="./CONTENT/Kakapo.jpg" alt="">
+                    <div class="a-info">
+                        <h3>Kakapo</h3><span>View
+                            Details</span>
+                    </div>
+                </div>
+
+                <div class="a-card"
+                    onclick="openDetails('Scarlet Macaw', 'Ara macao', 'Bird', 'Herbivore', 'Rainforests', 'Stable', './CONTENT/Scarlet Macaw.jpg')">
+                    <img src="./CONTENT/Scarlet Macaw.jpg" alt="">
+                    <div class="a-info">
+                        <h3>Scarlet Macaw</h3><span>View Details</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section class="my-foot">
+        <footer class="footer">
+            <div class="container footer-content">
+                <div class="footer-col about">
+                    <img src="./CONTENT/FAV_ICON-removebg-preview.png" alt="Logo" class="footer-logo">
+                    <p>Experience the wildlife like never before at Central
+                        Zoo. A place of conservation and education.
+                    </p>
+                </div>
+
+                <div class="footer-col left">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="animals.html">Animals</a></li>
+                        <li><a href="safari.html">Safari Booking</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col right">
+                    <h3>Zoo Timings</h3>
+                    <p><span>Mon - Fri:</span> 9:00 AM - 7:00 PM</p>
+                    <p><span>Sat - Sun:</span> 9:00 AM - 8:00 PM</p>
+                    <p><span>Holidays:</span> 9:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Central Zoo | Designed for Excellence</p>
+            </div>
+        </footer>
+    </section>
+</body>
+
+<!-- JAVASCRIPT -->
+
+<!-- Javascript of Lightbox/Modal -->
+<script>
+    function openDetails(name, species, classification, diet, habitat, status, imgPath) {
+
+        document.getElementById('mName').innerText = name;
+        document.getElementById('mSpecies').innerText = species;
+        document.getElementById('mClass').innerText = classification;
+        document.getElementById('mDiet').innerText = diet;
+        document.getElementById('mHabit').innerText = habitat;
+        document.getElementById('mStatus').innerText = status;
+        document.getElementById('modalImg').src = imgPath;
+
+
+        document.getElementById('animalModal').style.display = 'flex';
+    }
+
+    function closeDetails() {
+        document.getElementById('animalModal').style.display = 'none';
+    }
+</script>
+
+<!-- javascript for AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });     
+</script>
+
+</html>
